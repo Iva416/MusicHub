@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 let inputEL = document.getElementById('input-el');
 let buttonEL = document.getElementById('btn');
 let artistSearch = inputEL.value.trim();
@@ -18,34 +16,3 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-
-
-
-
-// function artistCall(event) {
-//     event.preventDefault()
-
-//         fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=central cee', options)
-//             .then(function (response) {
-//                 return response.json();})
-//             .then(response => console.log(response))
-//             .catch(err => console.error(err));
-//             console.log(inputEL);
-    
-// };
-
-// function fetchCall(artistSearch) {
-//     fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${artistSearch}`, options)
-//         .then(function (response) {
-//             return response.json();})
-//         .then(response => console.log(response))
-//         .catch(err => console.error(err));
-//         console.log(inputEL);
-
-//         };
-
-
-
-
-
->>>>>>> e8b1c7781b58977c39e04f45d165fc664d47c61e
