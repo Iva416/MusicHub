@@ -1,31 +1,48 @@
-const myList = document.querySelector('ul');
-const myRequest = new Request('products.json');
+let inputEL = document.getElementById('input-el');
+let buttonEL = document.getElementById('btn');
+let artistSearch = inputEL.value.trim();
+// let  = '';
 
-  $.ajax({
-    type:"GET",
-    url:"https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=92gEVl0gHbeKM91x0LdN2lJHc2OvkU8t",
-    async:true,
-    dataType: "json",
-    success: function(json) {
-                console.log(json);
-                for (const product of data.products) {
-                    const listItem = document.createElement('li');
-                    listItem.appendChild(
-                      document.createElement('strong')
-                    ).textContent = product.Name;
-                    listItem.append(
-                      ` can be found in ${
-                        product.Location
-                      }. Cost: `
-                    );
-                    listItem.appendChild(
-                      document.createElement('strong')
-                    ).textContent = `£${product.Price}`;
-                    myList.appendChild(listItem);
-                // Parse the response.
-                // Do other things.
-             }},
-    error: function(xhr, status, err) {
-                // This time, we do not end up here!
-             }
-  });
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '457cb46fe5msh4f0fca0f45a6a3bp1d9018jsn0107f1e3c983',
+		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+	}
+};
+
+
+fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+
+
+
+
+// function artistCall(event) {
+//     event.preventDefault()
+
+//         fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=central cee', options)
+//             .then(function (response) {
+//                 return response.json();})
+//             .then(response => console.log(response))
+//             .catch(err => console.error(err));
+//             console.log(inputEL);
+    
+// };
+
+// function fetchCall(artistSearch) {
+//     fetch(`https://deezerdevs-deezer.p.rapidapi.com/search?q=${artistSearch}`, options)
+//         .then(function (response) {
+//             return response.json();})
+//         .then(response => console.log(response))
+//         .catch(err => console.error(err));
+//         console.log(inputEL);
+
+//         };
+
+
+
+
+
