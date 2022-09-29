@@ -1,0 +1,37 @@
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+    background: #d2111b;
+    color: #fff;
+  }
+
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+
+  .card {
+    flex: 1 0 0;
+    padding: 10px;
+    image-orientation: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px;
+  }
+  
+  .card img {
+    align-items: center;
+  }
+  
+  .green-color {
+    color:green;
+}
+
+  .red-color {
+  color:red;
+}
