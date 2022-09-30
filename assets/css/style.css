@@ -139,3 +139,8 @@ button {
   border-radius: 30px;
   font-weight: bold;
 }
+
+#counter {
+  font-size: 30px;
+}
+
