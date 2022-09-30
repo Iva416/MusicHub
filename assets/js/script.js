@@ -1,3 +1,9 @@
+let artistNameEl = document.getElementById("artistname-el");
+let dLinkEl = document.getElementById("dlink-el")
+let inputEl = document.getElementById("input-el")
+let searchEl = document.getElementById("btn")
+// let getArtist = inputEl.value
+
 
 document.getElementById("dialog").onclick = function() {myFunction()};
 function myFunction() {
@@ -14,10 +20,50 @@ const options = {
 	}
 };
 
+// fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
+
+// fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
+//     .then(function (response) {
+//       if (response.ok) {
+//         response.json().then(function (data) {
+//           artistNameEl.textContent = data.name 
+//           var newLink = data;
+//           console.log(newLink)
+//           dLinkEl.setAttribute("href", newLink)
+//           console.log(data);    
+//     })}
+//     });
+
+function searchartist(event) {
+  event.preventDefault()
+  let getArtist = inputEl.value
+  console.log(getArtist)
+  fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/' + getArtist, options)
+      .then(function (response) {
+        return response.json()
+      }) 
+      .then(function (data) {
+        console.log(data)
+        const newLink = data.link 
+        console.log(newLink)
+        dLinkEl.setAttribute("href", newLink)
+      })
+}
+
 fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+      .then(function (response) {
+        return response.json()
+      }) 
+      .then(function (data) {
+        console.log(data)
+        const newLink = data.link 
+        console.log(newLink)
+        dLinkEl.setAttribute("href", newLink)
+      })
 
 
-	
+searchEl.addEventListener("click", searchartist)
+
