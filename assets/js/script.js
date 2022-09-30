@@ -4,11 +4,13 @@ let inputEl = document.getElementById("input-el")
 let searchEl = document.getElementById("btn")
 // let getArtist = inputEl.value
 
+let thumbsUp = document.getElementById("like");
+let thumbsDown = document.getElementById("dislike");
 
-document.getElementById("dialog").onclick = function() {myFunction()};
+document.getElementById("dialog").onclick = function () { myFunction() };
 function myFunction() {
-  document.getElementById("dialog").innerHTML = "";
-  document.getElementById("dialog").style.display = "none";
+	document.getElementById("dialog").innerHTML = "";
+	document.getElementById("dialog").style.display = "none";
 }
 
 
@@ -64,6 +66,27 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
         dLinkEl.setAttribute("href", newLink)
       })
 
+let countUp = localStorage.getItem("count-up");
+let countDown = localStorage.getItem("count-down");
 
 searchEl.addEventListener("click", searchartist)
 
+let count = 0;
+let count1 = 0;
+
+
+thumbsUp.addEventListener("click", function () {
+	if (count >= 0) {
+		count++;
+		thumbsUp.textContent = count;
+		localStorage.setItem("count-up", count);
+	}
+});
+
+thumbsDown.addEventListener("click", function () {
+	if (count1 <= 0) {
+		count1--;
+		thumbsDown.textContent = count1;
+		localStorage.setItem("count-down", count1);
+	}
+});
