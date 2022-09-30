@@ -1,37 +1,141 @@
-
-.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 25px;
-    background: #d2111b;
-    color: #fff;
-  }
-
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
-
-  .card {
-    flex: 1 0 0;
-    padding: 10px;
-    image-orientation: center;
-    text-align: center;
-    border-style: solid;
-    border-width: 0px;
-  }
-  
-  .card img {
-    align-items: center;
-  }
-  
-  .green-color {
-    color:green;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #C5C6C7;
 }
 
-  .red-color {
-  color:red;
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1F2833;
+  color: #C5C6C7;
+  border: 1px solid #66fcf1;
+  font-family: 'Satisfy', sans-serif;
+
+}
+
+body {
+  background-color: #0B0C10;
+}
+
+.title {
+  background-color: #1F2833;
+  color: #66fcf1;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+#logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  background: transparent;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+#input-el {
+  background-color: #1F2833;
+  border: 2px solid #C5C6C7;
+  border-radius: 20%;
+  margin: 0.5rem auto;
+  padding: 0.5rem auto;
+  color: #C5C6C7;
+}
+
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  image-orientation: center;
+  text-align: center;
+  border-style: solid;
+  border-width: 0px;
+  background-color: #1F2833;
+  border: 1px solid #66fcf1;
+  font-family:'Barlow Semi Condensed', sans-serif;
+
+
+}
+
+.card img {
+  align-items: center;
+}
+
+ul {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 30px;
+
+}
+
+.green-color {
+  color: #66fcf1;
+}
+
+.red-color {
+  color: #66fcf1;
+}
+
+.ticketmaster-widget {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+#dialog {
+  width: 500px;
+  height: 200px;
+  padding: 1rem;
+  background-color: #1F2833;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #66fcf1;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  margin-left: -240px;
+  margin-top: -240px;
+}
+
+#dialog h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #66fcf1;
+  font-weight: bold;
+}
+
+#dialog p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: #66fcf1;
+}
+
+button {
+  background-color: #1F2833;
+  color: #66fcf1;
+  border: 0px;
+  outline: none;
+  margin: 1rem;
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem auto;
+  width: 10rem;
+  border-radius: 30px;
+  font-weight: bold;
 }
