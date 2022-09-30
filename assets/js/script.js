@@ -1,7 +1,10 @@
-let inputEL = document.getElementById('input-el');
-let buttonEL = document.getElementById('btn');
-let artistSearch = inputEL.value.trim();
-// let  = '';
+
+document.getElementById("dialog").onclick = function() {myFunction()};
+function myFunction() {
+  document.getElementById("dialog").innerHTML = "";
+  document.getElementById("dialog").style.display = "none";
+}
+
 
 const options = {
 	method: 'GET',
@@ -11,8 +14,10 @@ const options = {
 	}
 };
 
-
 fetch('https://deezerdevs-deezer.p.rapidapi.com/artist/402', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
+
+
+	

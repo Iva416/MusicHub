@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MusicHub</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div>
+            <img id="logo" src="./assets/img/logo.jpeg" alt="Logo">
+        </div>
+        <h1 class="title">
+            MUSICHUB
+        </h1>
+        <!-- nav section - logo + nav bar -->
+        <nav>
+            <!-- search artist -->
+            <div>
+                <form>
+                    <input placeholder="Artist" type="text" id="input-el">
+                    <button id="btn">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <!-- music player, comment section, and contact left side -->
+            <article>
+                <!-- music player and icon section -->
+                <aside>
+                    <div id="spotify-el">
+                        <br>
+                        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/playlist/7615950682"
+                            width="100%" height="300" frameborder="1px" allowtransparency="true"
+                            allow="encrypted-media; clipboard-write"></iframe>
+                    </div>
+                    <br>
+                    <div>
+                        <!-- contact icons / href a tags-->
+                        <ul class="list-items">
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                            <li>Spotify</li>
+                        </ul>
+                    </div>
+                </aside>
+        </section>
+        <section class="card">
+            <!-- main title -->
+            <h2><b>HOT OR NOT</b></h2>
+            <br>
+            <!-- image, thumbs up, thumbs down article container -->
+
+            <aside>
+                <i class='fa fa-thumbs-up green-color' style="font-size: 50px;"></i>
+            </aside>
+            <br>
+            <figure>
+                <figure class="artistimg">
+                    <img src="./assets/img/ArtistImage.jpeg" img sizes="900x900">
+                </figure>
+                <br>
+                <figcaption class="artist-name">
+                    <b>Panic! At The Disco</b>
+                </figcaption>
+            </figure>
+            <br>
+            <aside>
+                <i class='fa fa-thumbs-down red-color' style="font-size: 50px;"></i>
+            </aside>
+        </section>
+
+        <div id="dialog">
+            <h1>Welcome to MusicHub</h1>
+            <br>
+            <p>Where music fans rate the worlds top acts!</p>
+            <p>Today we are featuring: <span>Panic! At The Disco</span></p>
+            <br>
+            <button type="button">Close</button>
+        </div>
+
+        <section class="card">
+            <section id="ticketmaster">
+                <div id="recent-el">
+                    <h2 id="stored-name"></h2>
+                    <div class="ticketmaster-widget" w-type="event-discovery"
+                        w-tmapikey="92gEVl0gHbeKM91x0LdN2lJHc2OvkU8t" w-googleapikey="YOUR_GOOGLE_API_KEY" w-keyword=""
+                        w-theme="oldschool" w-colorscheme="dark" w-width="350" w-height="600" w-size="25" w-border="2"
+                        w-borderradius="4" w-radius="25" w-period="year" w-layout="vertical"
+                        w-attractionid="K8vZ9175UqV" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid=""
+                        w-proportion="custom" w-titlelink="off" w-sorting="dateAscending" w-id="id_z4gn4c"
+                        w-source="ticketmaster" w-branding="Ticketmaster" w-countrycode="US" w-postalcode="" w-city=""
+                        w-latlong=""></div>
+            </section>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        Copywrite © 2022 wicstudios
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+        src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
+</body>
+
+</html>
