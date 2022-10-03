@@ -14,7 +14,7 @@
   background: #1F2833;
   color: #C5C6C7;
   border: 1px solid #66fcf1;
-  font-family: 'Satisfy', sans-serif;
+  font-family: 'Satisfy', Tahoma;
 
 }
 
@@ -66,8 +66,6 @@ main {
   border-width: 0px;
   background-color: #1F2833;
   border: 1px solid #66fcf1;
-  font-family:'Barlow Semi Condensed', sans-serif;
-
 
 }
 
@@ -153,6 +151,11 @@ button {
   font-weight: bold;
 }
 
-#counter {
-  font-size: 30px;
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
 }
