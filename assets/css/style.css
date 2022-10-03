@@ -141,3 +141,12 @@ button {
   border-radius: 30px;
   font-weight: bold;
 }
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
