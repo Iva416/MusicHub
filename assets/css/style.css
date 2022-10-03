@@ -45,6 +45,7 @@ main {
   background: transparent;
   display: inline-flex;
   align-items: flex-start;
+  box-shadow: 0 0 15px  #66fcf1;
 }
 
 #input-el {
@@ -86,9 +87,17 @@ ul {
   color: #66fcf1;
 }
 
+.green-color:hover {
+  text-shadow: 0 0 15px #66fcf1;
+}
+
 
 .red-color {
   color: #66fcf1;
+}
+
+.red-color:hover {
+  text-shadow: 0 0 15px  #66fcf1;
 }
 
 
