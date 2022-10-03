@@ -8,8 +8,9 @@
 
 ### In order to use MusicHub all you have to do is go to our url: https://iva416.github.io/MusicHub/
 
-You will find a webpage that would be easy to use, it will look like: 
-<img width="1431" alt="Screen Shot 2022-10-02 at 5 49 07 PM" src="https://user-images.githubusercontent.com/112333446/193477964-2ea2a39e-1068-498d-a9d9-4791f59295dc.png">
+You will find a webpage that would be easy to use, it will look like: <img width="1434" alt="Screen Shot 2022-10-02 at 9 07 27 PM" src="https://user-images.githubusercontent.com/112333446/193485373-546c0d75-af98-4530-a8f4-64a56aabda73.png">
+
+
 
 ## Credits: 
 
